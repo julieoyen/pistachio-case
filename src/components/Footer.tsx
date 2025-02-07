@@ -21,26 +21,26 @@ export default function Footer() {
               </a>
             </li>
           </ul>
-          <ul className="text-slate-400 font-medium space-y-2 flex flex-col lg:flex-row">
-            <li className="pr-2.5 border-r-blue-100/10 border-r">
+          <ul className="text-slate-400 font-medium text-base lg:text-lg  space-y-2 flex flex-col lg:flex-row">
+            <li className="pr-2.5  lg:border-r-blue-100/10 lg:border-r">
               <span className="pr-2.5">Nettsjef: </span>
               <span>Hildegunn Soldal</span>
             </li>
-            <li className="px-2.5 border-r-blue-100/10 border-r">
-              <span className="pr-2.5">Radiosjef: </span>
+            <li className="px-2.5  lg:border-r-blue-100/10 lg:border-r">
+              <span className="px-2.5">Radiosjef: </span>
               <span>Cathinka Rondan</span>
             </li>
-            <li className="px-2.5 border-r-blue-100/10 border-r">
+            <li className="px-2.5  lg:border-r-blue-100/10 lg:border-r">
               <span className="pr-2.5">TV-sjef: </span>
               <span>Jan Egil Ådland</span>
             </li>
-            <li className="px-2.5 border-r-blue-100/10 border-r">
+            <li className="px-2.5  ">
               <span className="pr-2.5">Ansvarlig redaktør: </span>
               <span>Vibeke Fürst Haugen</span>
             </li>
           </ul>
-          <ul className="text-sky-100 space-y-1 flex flex-col lg:flex-row my-4">
-            <li className="lg:pr-2.5 px-2,5 border-r-blue-100/10 border-r ">
+          <ul className="text-sky-100 space-y-1 text-base md:text-base lg:text-lg flex flex-col lg:flex-row my-4">
+            <li className="lg:pr-2.5 px-2.5 lg:border-r-blue-100/10 lg:border-r">
               <a
                 href="https://www.nrk.no/kontakt"
                 className="hover:underline hover:text-sky-200 "
@@ -48,7 +48,7 @@ export default function Footer() {
                 Kontakt
               </a>
             </li>
-            <li className="px-2.5 border-r-blue-100/10 border-r">
+            <li className="lg:pr-2.5 px-2.5 lg:border-r-blue-100/10 lg:border-r">
               <a
                 href="https://www.nrk.no/informasjon"
                 className="hover:underline hover:text-sky-200 "
@@ -56,7 +56,7 @@ export default function Footer() {
                 Om NRK
               </a>
             </li>
-            <li className="px-2.5 border-r-blue-100/10 border-r">
+            <li className="lg:pr-2.5 px-2.5 lg:border-r-blue-100/10 lg:border-r">
               <a
                 href="https://www.nrk.no/retningslinjer/personvern-i-nrk-1.7765898"
                 className="hover:underline hover:text-sky-200 "
@@ -64,7 +64,7 @@ export default function Footer() {
                 Personvern
               </a>
             </li>
-            <li className="px-2.5 border-r-blue-100/10 border-r">
+            <li className="lg:pr-2.5 px-2.5">
               <a
                 href="https://www.nrk.no/retningslinjer/informasjonskapsler-_cookies_-1.11109868"
                 className="hover:underline hover:text-sky-200 "

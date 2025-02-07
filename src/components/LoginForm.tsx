@@ -1,21 +1,19 @@
 import { useState } from 'react';
 
 export default function LoginForm() {
-  const [login, setLogin] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   return (
-    <div className="p-4 w-lg max-w-full lg:min-w-xl">
+    
+    <div className="p-4 w-lg max-w-full md:min-w-lg">
       <form
         action=""
         className="w-full flex-grow  mt-4 lg:pt-11 lg:px-11"
         onSubmit={(e) => {
           e.preventDefault();
-          const form = e.target as HTMLFormElement;
-          const value = form.test.value;
-          console.log(value);
-          console.log(login);
-          setLogin(true);
+          console.log(
+            "🎣 Uh-oh! You've been phished! Don't worry, it's just a demo. Or is it? 🤔"
+          );
         }}
       >
         <div className=" pb-6 ">
@@ -33,7 +31,7 @@ export default function LoginForm() {
             name="email"
             placeholder="E-post"
             className={
-              'border-1 focus:outline-sky-300 border-white rounded-full text-white placeholder:text-white px-6 w-full ' +
+              'border-1 focus:bg-[rgb(10,35,67)] focus:outline-sky-300 border-white rounded-full text-white placeholder:text-white px-6 w-full ' +
               (email ? 'pt-5 pb-2' : 'py-3.5')
             }
             onChange={(e) => {
@@ -56,8 +54,9 @@ export default function LoginForm() {
             id="password"
             name="password"
             placeholder="Passord (minst 6 tegn)"
+            autoComplete="current-password"
             className={
-              'border-1  focus:outline-sky-300  border-white rounded-full text-white placeholder:text-white px-6 w-full mt-4 ' +
+              'border-1 focus:bg-[rgb(10,35,67)] focus:outline-sky-300  border-white rounded-full text-white placeholder:text-white px-6 w-full mt-4 ' +
               (password ? 'pt-5 pb-2' : 'py-3.5')
             }
             onChange={(e) => {
@@ -101,7 +100,3 @@ export default function LoginForm() {
     </div>
   );
 }
-
-// <label htmlFor="password"></label>
-// <input type="text" id="test" name="tests" />
-// {login ? <p></p> : ''}
