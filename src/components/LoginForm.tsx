@@ -5,7 +5,7 @@ export default function LoginForm() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   return (
-    <div className="p-4 w-lg ">
+    <div className="p-4 w-lg max-w-full min-w-sm">
       <form
         action=""
         className=" w-full flex-grow p-4 mt-4 lg:pt-11 lg:px-11"
