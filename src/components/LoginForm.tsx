@@ -5,10 +5,10 @@ export default function LoginForm() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   return (
-    <div className="lg:p-4">
+    <div className="p-4 w-lg ">
       <form
         action=""
-        className=" w-full lg:max-w-96 flex-grow outline-1 outline-white lg:pt-11 lg:px-11"
+        className=" w-full flex-grow p-4 mt-4 lg:pt-11 lg:px-11"
         onSubmit={(e) => {
           e.preventDefault();
           const form = e.target as HTMLFormElement;
@@ -19,8 +19,10 @@ export default function LoginForm() {
         }}
       >
         <div className=" pb-6 ">
-          <h1 className="text-4xl text-white font-bold">Logg deg på</h1>
-          <p className="text-xl text-white mt-4 mb-4">
+          <h1 className="text-3xl md:text-5xl text-sky-100  font-extrabold">
+            Logg deg på
+          </h1>
+          <p className="text-xl text-sky-100  mt-4 mb-4">
             Få en bedre opplevelse i alle våre tjenester.
           </p>
         </div>
@@ -55,7 +57,7 @@ export default function LoginForm() {
             name="password"
             placeholder="Passord (minst 6 tegn)"
             className={
-              'border-1  focus:outline-sky-300 border-white rounded-full text-white placeholder:text-white px-6 w-full mt-4 ' +
+              'border-1  focus:outline-sky-300  border-white rounded-full text-white placeholder:text-white px-6 w-full mt-4 ' +
               (password ? 'pt-5 pb-2' : 'py-3.5')
             }
             onChange={(e) => {
@@ -65,30 +67,32 @@ export default function LoginForm() {
           <span
             id="password"
             className={
-              'text-white absolute bottom-5 left-6 text-sm ' +
+              'text-white focus:text-sky-300 absolute bottom-5 left-6 text-sm ' +
               (password ? '' : 'hidden')
             }
           >
-            Password
+            Passord (minst 6 tegn)
           </span>
         </label>
-        <button
-          type="button"
-          className=" hover:text-sky-200 text-white cursor-pointer"
-        >
-          Glemt passord?
-        </button>
+        <div className="flex justify-end">
+          <button
+            type="button"
+            className=" text-sky-200 hover:text-sky-100 cursor-pointer mt-2"
+          >
+            Glemt passord?
+          </button>
+        </div>
         <div className="mt-5 mb-2.5">
           <button
             type="submit"
-            className="border-30p font-medium text-base hover:bg-blue-800  bg-blue-500  text-white py-3 px-5 rounded-4xl w-full cursor-pointer "
+            className="border-30p font-bold text-lg hover:bg-blue-800  bg-blue-600  text-sky-100   py-2 px-4 rounded-4xl w-full cursor-pointer "
             onClick={() => {}}
           >
             Logg på
           </button>
         </div>
-        <div>
-          <p className="text-white">Har du ikke NRK-profil?</p>{' '}
+        <div className="flex flex-row mt-5">
+          <p className="text-white pr-2">Har du ikke NRK-profil?</p>{' '}
           <button className="text text-sky-200 cursor-pointer" type="button">
             Registrer deg
           </button>
