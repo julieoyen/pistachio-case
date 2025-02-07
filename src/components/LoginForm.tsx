@@ -5,10 +5,10 @@ export default function LoginForm() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   return (
-    <div className="p-4 w-lg max-w-full min-w-sm">
+    <div className="p-4 w-lg max-w-full md:min-w-xl">
       <form
         action=""
-        className=" w-full flex-grow p-4 mt-4 lg:pt-11 lg:px-11"
+        className="w-full flex-grow  mt-4 lg:pt-11 lg:px-11"
         onSubmit={(e) => {
           e.preventDefault();
           const form = e.target as HTMLFormElement;
@@ -19,7 +19,7 @@ export default function LoginForm() {
         }}
       >
         <div className=" pb-6 ">
-          <h1 className="text-3xl md:text-5xl text-sky-100  font-extrabold">
+          <h1 className="text-3xl sm:text-5xl text-sky-100  font-extrabold">
             Logg deg på
           </h1>
           <p className="text-xl text-sky-100  mt-4 mb-4">
