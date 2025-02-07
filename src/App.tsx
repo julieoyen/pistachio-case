@@ -10,7 +10,7 @@ function App() {
       <div className="min-h-screen">
         <Header />
         <main>
-          <div className="flex flex-col lg:flex-row-reverse w-full justify-between">
+          <div className="flex flex-col lg:flex-row-reverse w-full justify-between items-center">
             <HeroImage />
             <LoginForm />
           </div>
