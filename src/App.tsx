@@ -7,7 +7,7 @@ import './App.css';
 function App() {
   return (
     <>
-      <div className="min-h-screen">
+      <div className="min-h-screen ">
         <Header />
         <main>
           <div className="flex flex-col lg:flex-row-reverse w-full justify-between items-center">
