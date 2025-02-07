@@ -14,6 +14,7 @@ export default function LoginForm() {
           const form = e.target as HTMLFormElement;
           const value = form.test.value;
           console.log(value);
+          console.log(login);
           setLogin(true);
         }}
       >
